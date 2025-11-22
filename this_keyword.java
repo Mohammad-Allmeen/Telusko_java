@@ -9,7 +9,6 @@ private String color;
 }
  */
 
-
 // this keyword
 // to differentiate the instance variable and local variable this keyword is used 
 // this keyword refers to the current object which calls the method here it is obj

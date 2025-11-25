@@ -1,5 +1,11 @@
+// package is like a folder where you store different types of files to keep the project in an organized way
+// Whichever inbuilt class you use in java is called package
+// By default every class is imported by one package java.lang
+// Example System is a class and it belongs to package java.lang
 
 package OOPs;
+
+import java.lang.*; // even if you dont mention this class is already imported
 
 // Calc is the Super Class/Base Class/Parent class and AdvClass is the derived class
 class Calci{
@@ -37,6 +43,6 @@ public class Inheritance_Calc {
     int divRes= obj.div(10, 5);
 
     System.out.println("Addition: " +addRes +", Subtraction: "+ subRes+ ", Multiplication: "+ multiRes + ", Divison: "+divRes );
-
+        
     }
 }

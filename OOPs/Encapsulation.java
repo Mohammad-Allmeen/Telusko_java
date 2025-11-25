@@ -1,3 +1,4 @@
+package OOPs;
 
 class Human{
 private String name="Allmeen"; // when you declare the variable as private now it restricts the user and they wont be able to access in the other class 

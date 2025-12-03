@@ -1,5 +1,5 @@
 // super(); keyword calls the constructor of the parent class
-// By default every constructor has the super(); already present whethere you mention it or not
+// By default every constructor has the super(); already present whether you mention it or not
 // and this keyword calls the default constructor of the parent class
 
 

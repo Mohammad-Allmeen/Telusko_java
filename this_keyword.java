@@ -15,7 +15,7 @@ private String color;
 // obj refers to the Car class object thus it refers and signals it to the instance variable of the class
 
 public void set_Speed(double speed){ 
-      this. speed=speed;  // now it will assign to the instance/global variable
+      this.speed=speed;  // now it will assign to the instance/global variable
 }
 public double get_speed(){
     return speed;

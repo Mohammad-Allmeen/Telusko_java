@@ -12,6 +12,6 @@ public class Object_Class {
     public static void main(String[] args){
  
         Laptop obj = new Laptop();
-        System.out.println(obj); // whenever you print the obj by default it is obj.toString
+        System.out.println(obj); // whenever you print the obj by default it is obj.toString and this toString is from the object class
     }
 }

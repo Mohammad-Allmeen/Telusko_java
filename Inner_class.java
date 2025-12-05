@@ -8,7 +8,7 @@ class A {
 
     class B {
         public void methodB() {
-            System.out.println("In method of B ");
+            System.out.println("In method of B");
         }
     }
 }

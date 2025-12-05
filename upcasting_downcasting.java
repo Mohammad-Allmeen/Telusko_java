@@ -31,17 +31,7 @@ public class upcasting_downcasting {
         // However if you need to access the the lower class method that is the derived class method which you cannot access by above method because the reference is of A class
         // Then you need to perform downcasting which is done manually and specifically
 
-        B obj1= (B) obj;  // this is call downcasting, now using this new obj1 you can call the methods of the derive class
+        B obj1= (B) obj;  // this is call downcasting, now using this new obj1 you can call the methods of the derived class
         
-
-
-
-
-        // now i
-
-
-
-
-
     }
 }

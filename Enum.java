@@ -10,7 +10,7 @@ public class Enum {
 
      Status s= Status.Failed;
 
-     System.out.println(s.getClass().getSuperclass());
+     System.out.println(s.getClass().getSuperclass()); // enum in java extend Enum class which provides all the method for the enum class to use 
 
      System.out.println(s);
 

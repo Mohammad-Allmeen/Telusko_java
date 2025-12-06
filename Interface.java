@@ -9,13 +9,12 @@ interface Super{
 
     int area=4500; //By default every varibale in the interface is final and static so you need to define them and they wont be modified
     String name= "India";
-
-
    public abstract void drive(); 
    void fly(); // by default "public abstract" is added before therefore you do not need to write it will automatically work
 }
 
 // you can have multiple interface and a class can implement multiple interfaces
+
 interface SuperSecond{
 void brake();
 }

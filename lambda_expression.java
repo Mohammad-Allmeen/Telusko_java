@@ -17,7 +17,8 @@ public class lambda_expression {
     //     }
     // };
 
-// The method can be written in the form of Lambda expression and as it is the SAM interface it contains only method therefore you do not need to mention the method name
+// The above anonymous class with the method can be written in the form of Lambda expression and as it is the SAM interface it contains only method therefore you do not need to mention the method name
+
     // lambda obj=(topic)-> {        // if no value is passed the () will be empty
     //  System.out.println("The Concept of the " + topic + " expression.");
     // };

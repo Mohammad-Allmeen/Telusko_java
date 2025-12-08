@@ -4,6 +4,19 @@
 // the concept of interface is basically to show you the design by just declare the method but it is the job of you meaning the class to implement it
 // Just like if you want to reach a location i will show you the path however it is your job to walk 
 //Interface is a concept which is used to implement the concept Multiple inheritance in Java
+/*
+
+Types of Interface
+
+1. Normal Interface - that contains more than one method
+2. Funtional Interface- it is also called SAM- Single Abstract Method Interface, which contains only one method
+3. Marker Interface- It is empty id does not contain any method, used for serialization and deserialization
+
+
+
+
+*/
+
 
 interface Super{
 

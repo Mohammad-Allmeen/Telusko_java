@@ -1,5 +1,4 @@
 
-
 // class Greet implements Runnable {
 //    public void run(){       //the Thread class automatically runs the start() method which runs the run() method therefore you must have run/start method 
 //     for (int i = 0; i <100; i++) {
@@ -46,52 +45,53 @@
 //  }   
 // }
 
-
-
-
 // Above program using anonymous class and Lambda expression
 
-
-
 public class ThreadByRunnable {
- public static void main(String [] args){
+    public static void main(String[] args) {
 
+        // Anonymous class
+        // you can do this because Runnable is a functional interface means it contains
+        // only one method
+        Runnable obj = () -> // Reference is of the Runnable interface with the Anonyous class and Lambda
+                             // expression
 
-// Anonymous class 
-// you can do this because Runnable is a functional interface means is has only one method
-    Runnable obj= ()->  //Reference is of the Runnable interface with the Anonyous class and Lambda expression 
+        {
+            for (int i = 0; i < 10; i++) {
+                System.out.println("Assalamwalaikum");
 
-         { 
-     for (int i = 0; i <100; i++) {
-          System.out.println("Assalamwalaikum");
+                try {
+                    Thread.sleep(1); // By this line the schedular applies a break between this thread and the next
+                                     // one and this must be inside the try catch block as it throws Interrupted
+                                     // exception
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
 
-          try {
-             Thread.sleep(10); // By this line the schedular applies a break between this thread and the next one and this must be inside the try catch block as it throws Interrupted exception
-         } catch (InterruptedException e) {
-             e.printStackTrace();
-         }
-     } 
-    };  
+        // 2nd anonymous class with Lambda expression
 
-// 2nd anonymous class with Lambda expression
+        Runnable obj2 = () -> {
+            for (int i = 0; i < 10; i++) {
+                System.out.println("Walaikumassalam");
 
-    Runnable obj2 =()->{
-   for (int i = 0; i <100; i++) {
-          System.out.println("Walaikumassalam");
+                try {
+                    Thread.sleep(10); // By this line the schedular applies a break between this thread and the next
+                                      // one and this must be inside the try catch block as it throws Interrupted
+                                      // exception
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
 
-          try {
-             Thread.sleep(10); // By this line the schedular applies a break between this thread and the next one and this must be inside the try catch block as it throws Interrupted exception
-         } catch (InterruptedException e) {
-             e.printStackTrace();
-         }
-     }
-    };
+        Thread t1 = new Thread(obj); // you are passing the Runnable object into the Thread constructor as in the
+                                     // Function defination of the Thread
+        Thread t2 = new Thread(obj2);
 
-    Thread t1= new Thread(obj); // you are passing the Runnable object into the Thread constructor as in the Function defination of the Thread
-    Thread t2= new Thread(obj2);
+        obj.run();
+        obj2.run();
 
-    obj.run();
-    obj2.run();
-
- }   
+    }
 }

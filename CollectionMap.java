@@ -12,7 +12,7 @@ public class CollectionMap {
         student.put("Arshi",90.4 ); 
         student.put("Arslan",89.4 ); 
         student.put("Arafat",85.4 ); 
-        student.put("Arshi", 91.6);// it will print only one data of Arshi as Keys are unique, 
+        student.put("Arshi", 91.6);// it will print only one data of Arshi, as Keys are unique, 
 
         System.out.println(student); // this will print all the data stored in the Map
 

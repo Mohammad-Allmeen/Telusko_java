@@ -4,10 +4,10 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-class CollectionComparatorComparable {
+class CollectionComparator {
     public static void main(String[] args) {
 
-        // this method you can to sort by your own logic
+        // Comparator is a method and interface by which you can specify your own logic for sorting
         // Example - In this i am sorting the last digit number
 
         // for this you can use comparator, and it is an interface so you can eithere
@@ -43,6 +43,9 @@ class CollectionComparatorComparable {
         System.out.println(nums);
 
 
+
+
+        // Sorting of the list by the size of the length using Comparator
 
           Comparator<String> comList = new Comparator<String>() {
             public int compare(String i, String j) {

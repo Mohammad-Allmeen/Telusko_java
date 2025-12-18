@@ -45,7 +45,7 @@
 //  }   
 // }
 
-// Above program using anonymous class and Lambda expression
+// Below is the above program by using anonymous class and Lambda expression
 
 public class ThreadByRunnable {
     public static void main(String[] args) {

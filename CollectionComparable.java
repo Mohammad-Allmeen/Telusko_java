@@ -18,13 +18,14 @@ class Student implements Comparable<Student>{ // you need to define method prese
 
 // toString() is a method defined in the java.lang.Object class.
 // Since every Java class implicitly extends Object, every object in Java has a toString() method.
+
 @Override
     public String toString(){
         return "Student[Age: " +age +", Name: "+name+ "]";
     }
 
     public int compareTo(Student that) {
-     
+
         return this.age>that.age? 1:-1;
     }
 }

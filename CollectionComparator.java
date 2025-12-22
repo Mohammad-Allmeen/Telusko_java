@@ -10,7 +10,7 @@ class CollectionComparator {
         // Comparator is a method and interface by which you can specify your own logic for sorting
         // Example - In this i am sorting the last digit number
 
-        // for this you can use comparator, and it is an interface so you can eithere
+        // for this you can use comparator, and it is an interface so you can either
         // implement it by class or by anonymous class
 
         // COMPARATOR by anonymous class
@@ -51,7 +51,7 @@ class CollectionComparator {
             public int compare(String i, String j) {
 
                 if (i.length()>j.length()) {
-                    return 1; // if you return 1 the numbers will be swapped and -1 if you do not want to swap
+                    return 1; // if you return 1 the value will be swapped and -1 if you do not want to swap
                 } else {
                     return -1;
                 }

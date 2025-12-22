@@ -44,7 +44,7 @@ public class CollectionComparable {
 //     }
 // };
 
-// Above code written in short and concise form as Comparator is an functional interface and lambda expression can be used
+// The below code written is short and concise form of the above code, as Comparator is an functional interface and lambda expression can be used
 Comparator<Student> com = (i,j)->{ return i.age>j.age?1:-1;
 };
    
